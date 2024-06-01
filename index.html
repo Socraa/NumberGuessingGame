@@ -8,7 +8,7 @@
 </head>
 <body>
 
-    <div id="mainContainer"  class="child">
+    <div id="mainContainer" >
 
         <div class="child" id="firstChild">
             <h1>Guess The Number From 1-100</h1>
@@ -18,11 +18,30 @@
 
         <div class="child" id="secondChild">
             <label for="guessInput"><input type="number" id="guessInput" min="1" max="100" placeholder="1-100" required></label>
-            <button id="guessBtn">Guess</button>
-            <button id="howToBtn">How to Play?</button>
+            <button id="guessBtn" class="btnn">Guess</button>
+            <button id="howToBtn" class="btnn" onclick="howToPlay()">How to Play?</button>
         </div>
 
 
+    </div>
+
+    <div id="modal">
+        <div id="modalContent">
+            <button id="closeBtn">✖</button>
+            <h1>How to Play "Guess the Random Number"</h1>
+            <pre>
+            1. The game will randomly select a number between 1 and 100.
+
+            2. You have 10 attempts to guess the correct number.
+
+            3. After each guess, you will be told if your guess is too high, too low, or correct.
+
+            4. If you guess the correct number within 10 attempts, you win!              
+
+            5. If you do not guess the number within 10 attempts, you lose and the correct number will be revealed.
+            
+            6. Have fun and good luck!</pre>
+        </div>
     </div>
     
 </body>
