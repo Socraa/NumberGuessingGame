@@ -1,0 +1,53 @@
+body{
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(90deg, darkcyan, blue, cyan);
+}
+#mainContainer{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 400px;
+    height: 580px;
+    padding: 15px;
+    border-radius: 15px;
+
+}
+#firstChild{
+    justify-self: flex-start;
+}
+
+
+#mainContainer input{
+    height: 50px;
+    width: 100px;
+    font-size: 30px; 
+    text-align: center;
+    border-radius: 15px;
+}
+
+/* WebKit browsers (Chrome, Safari) */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+.child{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#hearts{
+    font-size: 30px;
+}
+
+
+
+
