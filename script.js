@@ -5,7 +5,14 @@ console.log(answer);
 
 let attempt = 10;
 
-
+function heart(){
+    const hearts = document.querySelector('#hearts');
+    hearts.innerHTML ='';
+    for (let i = 0; i < attempt; i++){
+        hearts.innerHTML += '<span class="heartss">♡</span>';
+    }
+}
+heart();
 
 const guessBtn = document.querySelector('#guessBtn');
 
@@ -26,6 +33,7 @@ guessBtn.onclick = function(){
         }else{
             alert('Pick a Number!!');
         }
+        heart();
     }else{
         alert('Game Over');
     }

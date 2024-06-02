@@ -84,6 +84,18 @@ body{
     text-align: center;
 }
 
+.heartss{
+    font-size: 40px;
+}
+
+#hearts {
+    margin-top: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+}
+
+
+
 
 
 
